@@ -1,0 +1,20 @@
+<!-- 
+1. 打包html的插件安装：html-webpack-plugin
+2. 压缩丑化代码插件安装：uglyfyjs-webpack-plugin
+3. 安装本地服务器插件：webpack-dev-server@2.9.3,此时跑服务器要用指令npx webpack-dev-server
+而不是任务执行的npm run build,但是安装的是全局的,可以在package.json中build下面创建一个本地的dev
+然后用npm run dev执行，最后可以通过npm run build完成最后打包
+4. 在dev指令中加入--open可以自动打开网页-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+		</div>
+		<!-- 放在div下面打包后才能找到 -->
+		<!-- <script src="dist/bundle.js"></script>   打包html的时候会自动插入 -->
+	</body>
+</html>

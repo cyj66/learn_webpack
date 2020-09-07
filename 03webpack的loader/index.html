@@ -1,0 +1,16 @@
+<!-- 
+1. 打包的思想：只引入bundle.js文件,不用引入其他的
+2. 由于入口是main.js,里面依赖的文件没有css和less,要设置依赖
+3. 文件打包的出口入口、loader以及必要的复制粘贴语句都写在webpack.config.js
+4. 每次修改各个文件里面的内容后都需要重新打包
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="dist/bundle.js"></script>   
+	</head>
+	<body>
+	</body>
+</html>

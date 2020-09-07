@@ -1,0 +1,20 @@
+<!-- 
+1. -save-dev开发时依赖，-save运行时依赖
+2. console控制台中出现的：runtime-only指代码中不可以有任何的template(包括vue实例),
+runtime-compiler指代码中可以有template,compiler意思是可编译
+3. 安装vue-loader和vue-template-compiler
+4. main.js里的vue内容——>vue内容封装到app.js中——>vue内容封装到app.vue中——>组件套娃
+4. 试试自带说明版权的横幅插件plugin-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+		</div>
+		<!-- 放在div下面打包后才能找到 -->
+		<script src="dist/bundle.js"></script>   
+	</body>
+</html>

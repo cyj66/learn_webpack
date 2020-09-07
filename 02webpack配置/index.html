@@ -1,0 +1,18 @@
+<!-- 
+1.cd .. 打开上一层文件,cd+文件名打开目录下某文件
+2. 本来终端中要输入：npx webpack ./src/main.js ./dist/bundle.js才能完成打包，
+此处需求为只需输入npx webpack即可完成打包，换句话说就是要动态绑定路径
+3. 要使用node自带包需在终端输入npm init,最后会自动生成package.json文件 
+4. 在package.json文件中自己加入"build":"npx webpack"，终端输入npm run build照样运行
+5. 我安装webpack的时候是全局的，安装本地的需输入npm install webpack@3.6.0 --save-dev,后面的--save-dev表示开发时依赖
+6. 访问局部webpack方法：（1）第4步（会优先找本地局部的）；（2）./node_modules/.bin/webpack-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="dist/bundle.js"></script>   
+	</head>
+	<body>
+	</body>
+</html>
